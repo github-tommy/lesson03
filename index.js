@@ -6,7 +6,7 @@ let str = arr.join(', ');
 
 console.log(str);
 
-//Assignment 1: 5 string array. add 6th avocado. removed 3rd bacon. separate them with comma. To replace bacon waffle with avocado.
+//Assignment 1: 5 string array. add 6th avocado. removed 3rd bacon. separate them with comma. Objective: to replace bacon waffle with avocado.
 
 let arr = ['The', 'html200', 'class', 'is', 'awesome','!'];
 let str =(arr.join(' '));
@@ -19,7 +19,7 @@ console.log(arr[2]);
 let arr = ['waffles', 'cheese', 'bacon', 'eggs', 'tomato'];
 
 arr.forEach(function(item, index, array) {
-  console.log(index+1, item);
+  console.log(index+1, ',', item);
 });
 
-//Ass3: 5 string array and indexed.
+//Ass3: 5 string array and indexed and comma separated.
