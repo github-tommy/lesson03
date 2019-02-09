@@ -1,44 +1,33 @@
-let suit = 'hearts';
+var cards = [['hearts', 'diamonds', 'clubs', 'spades'], ['ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'jack', 'queen', 'king']];
+
 for (let i = 0; i < 4; i++) {
-  if (i === 0) {
-    suit = 'hearts';    
-  } else if (i === 1) {
-    suit = 'diamonds';
-  } else if (i === 2) {
-    suit = 'spades';
-  } else if (i === 3) {
-    suit = 'clubs';
+  for (let j = 0; j <cards[1].length; j++) {
+  console.log(cards[1][j]+ ' of '+ cards[0][i]);
+}
+}
+
+//'ace of hearts'
+//' 2 of hearts'
+
+/*
+
+class Deck {
+  constructor() {
+    this.deck = [];
+    
+    const suits = ['hearts', 'diamonds', 'spades', 'clubs'];
+    const values = ['ace', 2,3,4,5,6,7,8,9,10, 'jack','queen', 'king'];
+    
+    for (let suit in suits) {
+      for (let value in values) {
+        this.deck.push(`${values[value]} of ${suits[suit]}`);
+    }
+   }
   }
-  let number = 'aces';
-  for (let x = 1; x < 14; x++) {
-    if(x === 1) {
-      number = 'aces'; 
-   } else if (x === 2) {
-     number = 'two';
-   } else if (x === 3) {
-     number = 'three';
-   } else if (x === 4) {
-     number = 'four';
-   } else if (x === 5) {
-     number = 'five';
-   } else if (x === 6) {
-     number = 'six';
-   } else if (x === 7) {
-     number = 'seven';
-   } else if (x === 8) {
-     number = 'eight';
-   } else if (x === 9) {
-     number = 'nine';
-   } else if (x === 10) {
-     number = 'ten';
-   } else if (x === 11) {
-     number = 'jack';
-   } else if (x === 12) {
-     number = 'queen';
-   } else if (x === 13) {
-     number = 'king';
-   } console.log(suit, number);
 }
-}
-// hearts,1, 2, etc
-//spades, 1, 2, etc
+
+const deck1 = new Deck();
+console.log(deck1.deck);
+
+// ["aces of hearts", "2 of hearts", "3 of hearts" etc......]
+*/
